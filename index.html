@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Website</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Movie World</h1>
+        <input type="text" id="search-bar" placeholder="Search movies..." onkeyup="searchMovies()">
+        <select id="genre-filter" onchange="filterByGenre()">
+            <option value="all">All Genres</option>
+            <option value="action">Action</option>
+            <option value="comedy">Comedy</option>
+        </select>
+    </header>
+    
+    <section id="movie-grid" class="movie-grid">
+        <div class="movie-card">
+            <img src="assets/images/movie1.jpg" alt="Movie 1">
+            <h3>Movie Title 1</h3>
+            <p>Action</p>
+        </div>
+        <div class="movie-card">
+            <img src="assets/images/movie2.jpg" alt="Movie 2">
+            <h3>Movie Title 2</h3>
+            <p>Comedy</p>
+        </div>
+    </section>
+
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>
